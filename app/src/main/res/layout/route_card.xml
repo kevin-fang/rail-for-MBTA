@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="4dp"
+        android:layout_margin="4dp"
+        android:layout_height="80dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:padding="4dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Train 814"
+                android:textSize="24sp"
+                android:id="@+id/train_number"
+                android:fontFamily="sans-serif-light"
+                android:layout_height="wrap_content" />
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_below="@id/train_number"
+                android:id="@+id/place_stop"
+                android:layout_height="wrap_content">
+            </ListView>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
