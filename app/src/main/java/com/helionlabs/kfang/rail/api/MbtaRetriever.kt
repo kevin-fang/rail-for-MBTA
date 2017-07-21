@@ -21,9 +21,7 @@ class MbtaRetriever {
         service = retrofit.create(MbtaApi::class.java)
     }
 
-    fun getInboundCommuterSchedule(routeName: String, time: Long): Observable<Response> = service.getBoundSchedule(routeName, time, INBOUND)
-
-    fun getOutboundCommuterSchedule(routeName: String, time: Long): Observable<Response> = service.getBoundSchedule(routeName, time, OUTBOUND)
+    fun getBoundedCommuterSchedule(routeName: String, time: Long, bound: Int): Observable<Response> = service.getBoundSchedule(routeName, time, bound)
 
     companion object {
         val INBOUND = 1

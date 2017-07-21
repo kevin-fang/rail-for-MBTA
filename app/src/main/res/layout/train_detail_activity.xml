@@ -5,7 +5,7 @@
     <TextView
         android:layout_width="match_parent"
         android:text="Providence Line"
-        android:padding="4dp"
+        android:padding="8dp"
         android:id="@+id/line_name"
         android:textSize="35sp"
         android:layout_gravity="center_horizontal"
@@ -24,13 +24,14 @@
         android:background="@color/light_blue_style"
         android:fontFamily="sans-serif-light"
         android:layout_height="wrap_content" />
-    <ScrollView
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="wrap_content"
+        android:padding="4sp"
         android:layout_height="wrap_content">
         <android.support.v7.widget.RecyclerView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
         </android.support.v7.widget.RecyclerView>
-    </ScrollView>
+    </android.support.v4.widget.NestedScrollView>
 </LinearLayout>
